@@ -30,6 +30,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 .buttons {
@@ -125,4 +126,14 @@ body {
   letter-spacing: 0.88px;
   line-height: 17.64px;
   opacity: 0.5;
+}
+
+.game-grid {
+  text-align: center;
+  width: 327px;
+  height: 429px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
