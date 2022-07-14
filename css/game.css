@@ -1,0 +1,156 @@
+.game-grid {
+  text-align: center;
+  width: 328px;
+  height: 516px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+}
+
+.xo {
+  width: 71.97px;
+  height: 32px;
+}
+
+.flexbox {
+  width: 328px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.turn-screen {
+  display: flex;
+  width: 96px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--navy-hover);
+  color: var(--silver);
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-shadow: inset 0px -4px 0px #10212a;
+}
+
+.x-turn {
+  margin-right: 9px;
+}
+
+.refresh-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: auto;
+  border-radius: 5px;
+  background-color: var(--silver);
+  box-shadow: inset 0px -4px 0px #6b8997;
+  border: none;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background-color: var(--silver-hover);
+}
+
+.refresh-button > img {
+  width: 15.38px;
+  height: 15.38px;
+}
+
+.squares {
+  width: 96px;
+  height: 96px;
+  background-color: var(--navy-hover);
+  border-radius: 8px;
+  box-shadow: inset 0px -8px 0px #10212a;
+}
+
+.grid-container {
+  width: 328px;
+  height: 328px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-top: 20px;
+}
+
+.you,
+.ties,
+.cpu {
+  width: 96px;
+  height: 64px;
+  border-radius: 8px;
+  margin-left: -10px;
+  padding-top: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1.25px;
+  color: var(--navy-hover);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.you {
+  background-color: var(--blue);
+}
+
+.ties {
+  background-color: var(--silver);
+}
+
+.cpu {
+  background-color: var(--yellow);
+}
+
+p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.75px;
+}
+
+.icon-x {
+  background-image: url("../assets/icon-x.svg ");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.icon-o {
+  background-image: url("../assets/icon-o.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  cursor: pointer;
+}
+
+.icon-x:hover {
+  background-image: url("../assets/icon-x-outline.svg");
+}
+
+.icon-o:hover {
+  background-image: url("./assets/icon-o-outline.svg");
+}
