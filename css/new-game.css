@@ -6,7 +6,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  /* display: none; */
 }
 
 .buttons {
@@ -73,12 +73,21 @@
 .select-mark form {
   width: 279px;
   height: 72px;
-  border-radius: 10px;
   background-color: var(--navy);
-  padding: 8px;
+  border-radius: 10px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+}
+
+.select-mark form div {
+  width: 132px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 8px solid var(--navy);
 }
 
 .select-mark form input {
@@ -90,8 +99,6 @@
   display: inline-block;
   width: 128px;
   height: 54px;
-  background-color: black;
-  border: 10px;
 }
 
 .select-mark p {
@@ -102,4 +109,21 @@
   letter-spacing: 0.88px;
   line-height: 17.64px;
   opacity: 0.5;
+}
+
+#x-mark__section label,
+#o-mark__section label {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px 32px;
+  border-radius: 10px;
+}
+
+#x-mark__section label {
+  background-image: url("../assets/icon-x-turn.svg");
+}
+
+#o-mark__section label {
+  background-image: url("../assets/icon-o-alt.svg");
+  background-color: var(--silver);
 }
