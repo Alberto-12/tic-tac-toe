@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
@@ -36,7 +35,58 @@
       </div>
     </div>
     <div class="game-grid">
-      Game Grid
+      <header class="flexbox">
+        <img class="xo" src="./assets/logo.svg" alt="">
+        
+
+        <div class="turn-screen"><img class="x-turn" src="./assets/icon-x-turn.svg" alt="">turn</div>
+        <button class="refresh-button">
+          <img src="./assets/icon-restart.svg" alt="" />
+        </button>
+      </header>
+      <main>
+        <div class="grid-container">
+          <div class="squares icon-x"></div>
+          <div class="squares"></div>
+          <div class="squares icon-x" ></div>
+          <div class="squares"></div>
+          <div class="squares icon-o" ></div>
+          <div class="squares icon-x" ></div>
+          <div class="squares icon-o"></div>
+          <div class="squares"></div>
+          <div class="squares icon-o"></div>
+        </div>
+      </main>
+      <footer>
+        <div class="you">
+          <p>x(you)</p>
+          14
+        </div>
+        <div class="ties">
+          <p>ties</p>
+          32
+        </div>
+        <div class="cpu">
+          <p>0 (cpu)</p>
+          11
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal-container">
+        <p class="first-message">oh no, you lost...</p>
+        <p class="second-message">
+          <img
+            class="image-second-message"
+            src="./assets/icon-o.svg"
+            alt=""
+          />takes the round
+        </p>
+        <div class="modal-button-section">
+          <button class="quit-button">quit</button
+          ><button class="next-round-button">next round</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
