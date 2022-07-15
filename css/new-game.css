@@ -6,7 +6,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* display: none; */
+  display: none;
 }
 
 .buttons {
@@ -126,4 +126,28 @@
 #o-mark__section label {
   background-image: url("../assets/icon-o-alt.svg");
   background-color: var(--silver);
+}
+
+@media (min-width: 576px) {
+  .select-mark,
+  .buttons,
+  .app {
+    width: 460px;
+  }
+
+  .select-mark form {
+    width: 412px;
+  }
+
+  .select-mark form div,
+  .select-mark form label {
+    width: 198px;
+  }
+
+  .buttons button {
+    height: 67px;
+    font-size: 20px;
+    line-height: 25.2px;
+    letter-spacing: 1.25px;
+  }
 }

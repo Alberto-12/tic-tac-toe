@@ -6,7 +6,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  /* display: none; */
 }
 
 .xo {
@@ -15,10 +15,9 @@
 }
 
 .flexbox {
-  width: 328px;
-  height: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .turn-screen {
@@ -32,10 +31,10 @@
   justify-content: center;
   align-items: center;
   font-family: "Outfit";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   box-shadow: inset 0px -4px 0px #10212a;
 }
@@ -76,8 +75,8 @@
 }
 
 .grid-container {
-  width: 328px;
-  height: 328px;
+  /* width: 328px;
+  height: 328px; */
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
@@ -86,7 +85,7 @@
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   margin-top: 20px;
 }
@@ -97,7 +96,6 @@ footer {
   width: 96px;
   height: 64px;
   border-radius: 8px;
-  margin-left: -10px;
   padding-top: 6px;
   font-weight: 700;
   font-size: 20px;
@@ -152,5 +150,63 @@ p {
 }
 
 .icon-o:hover {
-  background-image: url("./assets/icon-o-outline.svg");
+  background-image: url("../assets/icon-o-outline.svg");
+}
+
+@media (min-width: 576px) {
+  .game-grid {
+    width: 460px;
+  }
+
+  .turn-screen {
+    width: 140px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+  }
+
+  .x-turn {
+    width: 20px;
+    height: 20px;
+  }
+
+  .refresh-button {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+  }
+
+  .refresh-button > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .squares {
+    width: 140px;
+    height: 140px;
+    border-radius: 15px;
+  }
+
+  .icon-x,
+  .icon-o {
+    background-size: 64px 64px;
+  }
+
+  .you,
+  .ties,
+  .cpu {
+    width: 140px;
+    height: 72px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.875px;
+  }
 }
