@@ -72,6 +72,7 @@
   background-color: var(--navy-hover);
   border-radius: 8px;
   box-shadow: inset 0px -8px 0px #10212a;
+  cursor: pointer;
 }
 
 .grid-container {
