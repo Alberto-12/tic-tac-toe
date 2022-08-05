@@ -8,15 +8,15 @@
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal;
-  display: none;
+  /*display: none;*/
 }
 
 .modal-container {
+  
   width: 100%;
   height: 228px;
   position: absolute;
-  margin-top: 220px;
-  margin-bottom: 219px;
+  margin-top: 315px;
   background-color: var(--navy-hover);
 }
 
@@ -96,4 +96,29 @@
 
 .next-round-button:hover {
   background-color: var(--yellow-hover);
+}
+
+@media (min-width: 576px) {
+  .first-message {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .image-second-message {
+    width: 64px;
+  }
+
+  .second-message {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 2.5px;
+  }
+
+  .modal-container {
+    height: 266px;
+  }
+  
 }
