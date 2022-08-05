@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tic Tac Toe</title>
-</head>
-<body>
-
-  <!-- New game menu start -->
-
-  Pick player 1's mark
-  Remember: X goes first
-
-  New Game (vs CPU)
-  New Game (vs player)
-
-  <!-- New game menu end -->
-
-  <!-- Game board start -->
-
-  <!-- x/o icon --> turn
-
-  X (You) <!-- Your score -->
-  Ties <!-- Ties score -->
-  X (CPU) <!-- CPU score -->
-
-  Oh no, you lost
-  You won!
-  Player <!-- 1/2 --> wins!
-
-  <!-- x/o icon --> takes the round
-  Round tied
-  Restart game?
-
-  Quit
-  Next round
-  No, cancel
-  Yes, restart
-
-  <!-- Game board end -->
-
-</body>
+    <title>Frontend Mentor | Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="app">
+      <img src="./assets/logo.svg" alt="logo" />
+      <div class="select-mark">
+        <h1>Pick player 1's mark</h1>
+        <form>
+          <div id="x-mark__section">
+            <input type="radio" name="mark" id="x" value="x" />
+            <label for="x"></label>
+          </div>
+          <div id="o-mark__section">
+            <input type="radio" name="mark" id="o" value="o" />
+            <label for="o"></label>
+          </div>
+        </form>
+        <p>Remember: x goes first</p>
+      </div>
+      <div class="buttons">
+        <button>new game (vs cpu)</button><button>new game (vs player)</button>
+      </div>
+    </div>
+    <!-- Game Grid section -->
+    <div class="game-grid">
+      <header class="flexbox">
+        <img class="xo" src="./assets/logo.svg" alt="">
+        <div class="turn-screen"><img class="x-turn" src="./assets/icon-x-turn.svg" alt="">turn</div>
+        <button class="refresh-button">
+          <img src="./assets/icon-restart.svg" alt="" />
+        </button>
+      </header>
+      <main>
+        <div class="grid-container">
+          <div class="squares icon-x"></div>
+          <div class="squares"></div>
+          <div class="squares icon-x" ></div>
+          <div class="squares"></div>
+          <div class="squares icon-o" ></div>
+          <div class="squares icon-x" ></div>
+          <div class="squares icon-o"></div>
+          <div class="squares"></div>
+          <div class="squares icon-o"></div>
+        </div>
+      </main>
+      <footer>
+        <div class="you">
+          <p>x(you)</p>
+          14
+        </div>
+        <div class="ties">
+          <p>ties</p>
+          32
+        </div>
+        <div class="cpu">
+          <p>o (cpu)</p>
+          11
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal-container">
+        <p class="first-message">oh no, you lost...</p>
+        <p class="second-message">
+          <img
+            class="image-second-message"
+            src="./assets/icon-o.svg"
+            alt=""
+          />takes the round
+        </p>
+        <div class="modal-button-section">
+          <button class="quit-button">quit</button
+          ><button class="next-round-button">next round</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

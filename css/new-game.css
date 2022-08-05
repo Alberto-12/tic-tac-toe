@@ -1,0 +1,153 @@
+.app {
+  text-align: center;
+  width: 327px;
+  height: 429px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 56px;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.16px;
+  letter-spacing: 1px;
+  color: var(--navy);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.buttons button:first-child {
+  background-color: var(--yellow);
+  box-shadow: inset 0px -8px 0px #cc8b13;
+}
+
+.buttons button:first-child:hover {
+  background-color: var(--yellow-hover);
+}
+
+.buttons button:last-child {
+  background-color: var(--blue);
+  box-shadow: inset 0px -8px 0px #118c87;
+}
+
+.buttons button:last-child:hover {
+  background-color: var(--blue-hover);
+}
+
+.select-mark {
+  width: 327px;
+  height: 205px;
+  background-color: var(--navy-hover);
+  border-radius: 15px;
+  box-shadow: inset 0px -8px 0px #10212a;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.select-mark h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--silver);
+  line-height: 20.16px;
+  letter-spacing: 1px;
+}
+
+.select-mark form {
+  width: 279px;
+  height: 72px;
+  background-color: var(--navy);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-mark form div {
+  width: 132px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 8px solid var(--navy);
+}
+
+.select-mark form input {
+  appearance: none;
+}
+
+.select-mark form label {
+  color: var(--silver);
+  display: inline-block;
+  width: 128px;
+  height: 54px;
+}
+
+.select-mark p {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--silver);
+  text-transform: uppercase;
+  letter-spacing: 0.88px;
+  line-height: 17.64px;
+  opacity: 0.5;
+}
+
+#x-mark__section label,
+#o-mark__section label {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px 32px;
+  border-radius: 10px;
+}
+
+#x-mark__section label {
+  background-image: url("../assets/icon-x-turn.svg");
+}
+
+#o-mark__section label {
+  background-image: url("../assets/icon-o-alt.svg");
+  background-color: var(--silver);
+}
+
+@media (min-width: 576px) {
+  .select-mark,
+  .buttons,
+  .app {
+    width: 460px;
+  }
+
+  .select-mark form {
+    width: 412px;
+  }
+
+  .select-mark form div,
+  .select-mark form label {
+    width: 198px;
+  }
+
+  .buttons button {
+    height: 67px;
+    font-size: 20px;
+    line-height: 25.2px;
+    letter-spacing: 1.25px;
+  }
+}
