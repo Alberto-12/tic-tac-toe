@@ -25,12 +25,12 @@ btn.onclick = function() {
 
 let squares = document.querySelectorAll(".squares");
  
-function squaresClickHandler () {
-    squares.classList.add("icon-x");
-  }
-
 for (let i = 0; i < squares.length; i++) {
-squares[i].addEventListener("click", squaresClickHandler); 
+squares[i].addEventListener("click", ); 
+}
+
+function squaresClickhandler() {
+
 }
 
 
